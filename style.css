@@ -1,0 +1,92 @@
+html,body{
+    height: 100%;
+}
+body{
+    background-color: aqua;
+    margin: 0;
+    padding: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.header-title {
+    color: #385555;
+}
+.list-wrapper{
+    width: 90%;
+    max-width: 900px;
+    max-height: 600px;
+}
+.list-wrapper .list{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding: 0;
+    margin: 0;
+}
+.list-wrapper .list .list-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+.list-wrapper .list .list-item .list-item__photo{
+    position: absolute;
+    top: 100px;
+}
+.list-wrapper .list .list-item .list-item__photo img{
+    border-radius: 50%;
+    display: block;
+    width: 70px;
+    height: 70px;
+}
+.list-wrapper .list .list-item .list-item__background{
+    position: static;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.list-wrapper .list .list-item .list-item__background img{
+    max-width: 250px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.list-wrapper .list .list-item .list-item-manipular{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+.list-wrapper .list .list-item .list-item-manipular .list-item__name{
+    text-align: center;
+    font-size: 25px;
+    color: #385555;
+}
+.list-wrapper .list .list-item .list-item-manipular .list-item__email{
+    text-align: center;
+    font-size: 14px;
+}
+.list-wrapper .list .list-item .list-item__icons{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    background-color: #e8e8e8;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.list-wrapper .list .list-item .list-item__icons a{
+    opacity: 0.4;
+}
